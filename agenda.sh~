@@ -1,9 +1,7 @@
-:inicio
 echo "1. Mostrar los nombres de los contactos."
 echo "2. Mostrar el telefono de los contactos."
 echo "3. Mostrar la poblacion de los contactos."
 echo "4. Mostrar la edad de los contactos."
-echo "5. Mostrar todo de nuevo. "
 echo "Elije una opcion:"
 read opcion
 case $opcion in 
@@ -15,7 +13,6 @@ case $opcion in
 ;;
 4) cut -f4 -d ":" '/home/asir/Escritorio/agenda'
 ;;
-5) goto inicio
 *) echo "Error"
 ;;
 esac
